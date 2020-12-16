@@ -21,12 +21,12 @@
   			</button>
 		</form>
 		<a class="header_bar_btn header_bookmark" href="#">
-			<img class="icon_bookmark" src="assets/images/icons/icon-bookmark.png" alt="icon_bookmark"> </i>
-				Закладки: <span>0</span>
+			<i class="fa fa-bookmark" aria-hidden="true"></i>
+			Закладки: <span>0</span>
 		</a>
 		<a class="header_bar_btn header_shopping_cart" href="#">
-			<img class="icon" src="assets/images/icons/cart-icon.png" alt="icon_cart"> </i>
-				Корзина: <span>0</span>
+			<i class="fa fa-shopping-cart" aria-hidden="true"></i>
+			Корзина: <span>0</span>
 		</a>
 		<a class="header_bar_btn header_order" href="#">
 				Оформить заказ
@@ -44,7 +44,7 @@
 				<div class="main_info_adress">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</div>
 			</div>
 			<div class="main_info_user">
-				<a class="user_login icon_login" href="#"> <img class="icon_login icon" src="assets/images/icons/icon-login.png" alt="icon_login"> </i> Войти</a>
+				<a class="user_login" href="#"> <i class="fa fa-sign-in" aria-hidden="true"></i> Войти</a>
 				<a class="user_sign_in" href="#">Регистрация</a>
 			</div>
 		</div>
@@ -79,10 +79,10 @@
 			<input type="radio" class="slide1" name="point" id="slide1" checked>
 			<input type="radio" class="slide2" name="point" id="slide2">
 			<div class="menu_slider_arrows">
-				<a href="#" class="menu_slider_arrow" data-direction="left">
+				<a class="menu_slider_arrow" href="#">
 					<img class="icon_left" src="assets/images/icons/icon_left.png" alt="icon_left_img">
 				</a>
-				<a href="#" class="menu_slider_arrow" data-direction="right">
+				<a href="#" class="menu_slider_arrow">
 					<img class="icon_right" src="assets/images/icons/icon_right.png" alt="icon_right_img">
 				</a>
 			</div>
@@ -291,32 +291,21 @@
 					Вы можете забрать товар сами,<br>
                     заехав в наш офис:
                 </p>
-                <img class="company_little_map" src="assets/images/info_map.png" alt="«Техномарт» на карте">
+                <a class="open_modal_map" href="#full_map_open">
+                	<img class="company_little_map" src="assets/images/info_map.png" alt="«Техномарт» на карте">
+                </a>
+                <div class="full_modal_map" id="full_map_open">
+                	<img src="assets/images/full_map.png">
+                    <a class="modal_map_close" href="#close">
+	    				<img src="assets/images/icons/icon-close.png" alt="icon-close">
+	   				 </a>
+                </div>
                 <a class="open_find_btn btn" href="#openModal">Заблудились? Напишите нам!</a>
 			</div>
 		</div>
 		</div>
 	</article>
 </div>
-<div class="modal_contact" id="openModal">
-        <a class="modal_contact_close" href="#close">X</a>
-        <form class="contact_form" action="/echo" method="post">
-            <div class="modal_content">
-                <label class="contact_form_label" for="name_field">Ваше имя:
-                    <input class="contact_form_item" type="text" name="name" id="name_field" placeholder="Имя Фамилия">
-                </label>
-                <label class="contact_form_label" for="email_field">Ваш e-mail:
-                    <input class="contact_form_item" type="email" name="email" id="email_field" placeholder="email@example.com">
-                </label>
-                <label class="contact_form_label" for="text_field">Текст письма:
-                    <textarea class="contact_form_item text_field" name="text" rows="5" id="text_field" placeholder="В свободной форме"></textarea>
-                </label>
-            </div>
-            <div class="modal_footer">
-                <button class="modal_btn btn" type="submit" name="send">Отправить</button>
-            </div>
-        </form>
-    </div>
 <footer class="footer">
 	<div class="main_footer">
 		<div class="main_footer_container">
@@ -370,5 +359,28 @@
 		</div>
 	</div>
 </footer>
+<div class="modal_contact" id="openModal"> 
+	<div class="modal_target">
+	    <a class="modal_contact_close" href="#close">
+	    	<img src="assets/images/icons/icon-close.png" alt="icon-close">
+	    </a>
+        <form class="contact_form">
+            <div class="modal_content">
+                <label class="contact_form_label" for="name_field">Ваше имя:
+                    <input class="contact_form_item" type="text" name="name" id="name_field" placeholder="Имя Фамилия">
+                </label>
+                <label class="contact_form_label" for="email_field">Ваш e-mail:
+                    <input class="contact_form_item" type="email" name="email" id="email_field" placeholder="email@example.com">
+                </label>
+                <label class="contact_form_label" for="text_field">Текст письма:
+                    <textarea class="contact_form_item text_field" name="text" rows="5" id="text_field" placeholder="В свободной форме"></textarea>
+                </label>
+            </div>
+            <div class="modal_footer">
+                <button class="modal_btn" type="submit">Отправить</button>
+            </div>
+        </form>	
+	</div>
+</div>	
 </body>
 </html>
