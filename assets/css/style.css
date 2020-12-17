@@ -115,7 +115,7 @@ li {
 .header_search_field {
 	width: 100%;
 	height: 49px;
-	padding-left: 39px;
+	padding-left: 50px;
 	border: none;
 	background-color: #293449;
 
@@ -158,9 +158,23 @@ li {
     color: #ee3643;
 }
 
+.header_text {
+    float: right;
+    margin-right: 0;
+    color: #fff;
+}
+
+.header_text:active {
+    color: #a2a5a6;
+}
+
+.header_bar {
+    position: inline-block;
+}
+
 .header_bar_btn {
-	position: relative;
-	padding: 12px 2px 12px 0px;
+	position: inline-block;
+	padding: 12px 0px 12px 0px;
 	width: 160px;
 	background-color: transparent;
 
@@ -176,7 +190,8 @@ li {
 
 .header_bookmark, .header_shopping_cart {
 	width: 150px;
-    padding-left: 20px;
+    padding-left: 15px;
+    padding-right: 25px;
 }
 
 .header_bar_btn:last-child {
@@ -184,11 +199,11 @@ li {
 }
 
 .fa-bookmark {
-	margin-right: 13px;
+    float: left;
 }
 
 .fa-shopping-cart {
-	margin-right: 13px;
+	float: left;
 }
 
 .header_bookmark:hover, .header_bookmark:hover {
@@ -201,12 +216,12 @@ li {
 	color: #a2a5a6;
 }
 
-.header_shopping_cart:hover, .header_shopping_cart:hover .fa-shopping-cart {
+.header_shopping_cart:hover, .header_shopping_cart:hover {
 	background-color: #212a3a;
 	color #fff;
 }
 
-.header_shopping_cart:active, .header_shopping_cart:active .fa-shopping-cart {
+.header_shopping_cart:active, .header_shopping_cart:active {
 	background-color: #161d29;
 	color: #a2a5a6;
 }
@@ -287,13 +302,37 @@ li {
 	height: 45px;
 	background-color: #fff;
 	margin-left: 19px;
-	padding: 12px 0 14px 14px;
+	padding: 12px 20px 14px 20px;
 
-	color: #000; 
 	font-size: 21px;
 	font-weight: 400;
 	line-height: 21px;
 	text-decoration: none;
+}
+
+.login_container {
+    color: #c5c5c5;
+    position: inline-block;
+}
+
+.user_login:hover {
+    color: #32425c ;
+}
+
+.user_login:active {
+    color: #c5c5c5;
+}
+
+.login_text {
+    color: #000;
+}
+
+.login_text:hover {
+    color: #ee3643;
+}
+
+.login_text:active {
+    color: #b2b2b2;
 }
 
 .user_sign_in {
@@ -311,21 +350,16 @@ li {
 	text-decoration: none;
 }
 
-.user_login:hover, .user_sign_in:hover {
+.user_sign_in:hover {
 	color: #ee3643;
 }
 
-.user_login:active, .user_sign_in:active {
+.user_sign_in:active {
 	color: #b2b2b2
 }
 
 .fa-sign-in {
-	margin-right: 14px;
-	color: #c5c5c5;
-}
-
-.fa-sign-in:hover {
-	color: #212a3a;
+    float: left;
 }
 
 /*Main header navigation*/
