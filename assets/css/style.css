@@ -302,7 +302,8 @@ li {
 	height: 45px;
 	background-color: #fff;
 	margin-left: 19px;
-	padding: 12px 20px 14px 20px;
+	padding: 12px 2px 14px 20px;
+    color: #000;
 
 	font-size: 21px;
 	font-weight: 400;
@@ -310,9 +311,13 @@ li {
 	text-decoration: none;
 }
 
-.login_container {
-    color: #c5c5c5;
+.login_btn {
     position: inline-block;
+    color: #c5c5c5;
+}
+
+.login_btn:hover {
+    color: #ee3643;
 }
 
 .user_login:hover {
@@ -334,6 +339,7 @@ li {
 .login_text:active {
     color: #b2b2b2;
 }
+
 
 .user_sign_in {
 	float: left;
@@ -359,6 +365,7 @@ li {
 }
 
 .fa-sign-in {
+    padding-right: 15px;
     float: left;
 }
 
