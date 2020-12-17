@@ -789,7 +789,7 @@ li {
 
 .product_card_btn_buy {
     display: block;
-    padding: 10px 0 10px 0;
+    padding: 10px 12px 10px 20px;
     margin-bottom: 12px;
     white-space: nowrap;
     overflow: hidden;
